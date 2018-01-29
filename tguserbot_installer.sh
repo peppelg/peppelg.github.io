@@ -3,5 +3,7 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin 
 git clone https://github.com/peppelg/TGUserbot
 cd TGUserbot
 composer update
+rm LICENSE
+rm README.md
 echo OK
 exit
