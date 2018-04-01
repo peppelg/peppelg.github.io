@@ -8,9 +8,10 @@ class memoryusage extends TGUserbotPlugin {
       return @round($size/pow(1024, ($i=floor(log($size, 1024)))), 2).' '.$unit[$i];
     }
 }
-  function onUpdate() {
-    global $msg;
-    global $chatID;
+  function onUpdate($update) {
+    foreach ($update as $varname => $var) {                     //ricava variabili da $update
+      if ($varname !== 'update') $$varname = $var;
+    }
     if ($msg == '/memoryusage') {
       sm($chatID, 'Sto utilizzando '.get_memory_usage());
     }
