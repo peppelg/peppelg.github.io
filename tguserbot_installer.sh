@@ -3,8 +3,9 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run this shit as root"
   exit
 fi 
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:ondrej/php -y
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y language-pack-en-base
+sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get update
 sudo apt-get -y install git zip screen curl python php7.2 php7.2-mbstring php7.2-xml php7.2-gmp php7.2-curl php7.2-bcmath php7.2-zip php7.2-json
 curl -sS https://getcomposer.org/installer | php7.2 -- --install-dir=/usr/bin --filename=composer
