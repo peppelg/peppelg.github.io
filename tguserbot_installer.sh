@@ -8,7 +8,7 @@ apt-get install -y software-properties-common
 apt-get install -y language-pack-en-base
 add-apt-repository -y ppa:ondrej/php
 apt-get update
-apt-get -y install git zip screen curl python php7.2 php7.2-mbstring php7.2-xml php7.2-gmp php7.2-curl php7.2-bcmath php7.2-zip php7.2-json
+apt-get -y install git zip screen curl python php7.2 php7.2-mbstring php7.2-xml php7.2-gmp php7.2-curl php7.2-bcmath php7.2-zip php7.2-json php7.2-cli
 curl -sS https://getcomposer.org/installer | php7.2 -- --install-dir=/usr/bin --filename=composer
 git clone https://github.com/peppelg/TGUserbot
 cd TGUserbot
