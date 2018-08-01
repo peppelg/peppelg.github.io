@@ -14,6 +14,7 @@ cd TGUserbot
 wget https://github.com/peppelg/TGUserbot/raw/master/TGUserbot.phar
 wget https://raw.githubusercontent.com/peppelg/TGUserbot/master/functions.php
 wget https://raw.githubusercontent.com/peppelg/TGUserbot/master/bot.php
+chmod 777 TGUserbot.phar
 apt-get -y install php7.2-cli
 update-alternatives --set php /usr/bin/php7.2
 echo OK
